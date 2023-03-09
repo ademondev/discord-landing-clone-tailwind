@@ -1,11 +1,9 @@
-import { useState } from 'react';
-import { Header } from './components/Header';
+import { AppWrapper } from './components/AppWrapper';
 
 function App() {
-  return (
-    <div className="App relative">
-      <Header />
-    </div>
+  return (<>
+    <AppWrapper />
+  </>
   )
 }
 
