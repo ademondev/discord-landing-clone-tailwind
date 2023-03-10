@@ -6,19 +6,19 @@ type Props = {}
 
 const socialIcons = [
     {
-        sourceLink: './src/assets/instagramLogo.svg',
+        sourceLink: '/instagramLogo.svg',
         altText: 'Instagram',
     },
     {
-        sourceLink: './src/assets/facebookLogo.svg',
+        sourceLink: '/facebookLogo.svg',
         altText: 'Facebook',
     },
     {
-        sourceLink: './src/assets/twitterIcon.svg',
+        sourceLink: '/twitterIcon.svg',
         altText: 'Twitter',
     },
     {
-        sourceLink: './src/assets/youtubeLogo.svg',
+        sourceLink: '/youtubeLogo.svg',
         altText: 'Youtube',
     },
 ];
@@ -45,12 +45,12 @@ const SocialLinks: FC = () => {
             <div className="flex flex-col col-start-1 col-end-4 mb-14">
                 <h4 className="text-[32px] text-blurpleButton font-ginto-nord">IMAGINE A PLACE</h4>
                 <div className="inline-flex items-center mt-6">
-                    <img src="./src/assets/USFlag.png" alt="USA flag" 
+                    <img src="/USFlag.png" alt="USA flag" 
                         className='inline-block w-6 h-4 align-end'
                     />
                     <div className="inline-block ml-1">English, USA</div>
                     <div className="inline-block ">
-                        <img src="./src/assets/chevronDown.svg" alt=""
+                        <img src="/chevronDown.svg" alt=""
                             className='inline-block ml-1'
                         />
                     </div>

@@ -22,7 +22,7 @@ const FeatureSectionOne: FC<Props> = (props) => {
             lg:grid-cols-12
             lg:px-10 lg:py-[120px]"
         >
-            <img src='./src/assets/featureImage1.svg'
+            <img src='/featureImage1.svg'
                 className="col-start-1 col-end-5
                     lg:col-end-8"
             />
@@ -49,7 +49,7 @@ const FeatureSectionTwo: FC<Props> = (props) => {
             lg:grid-cols-12
             lg:px-10 lg:py-[120px]"
         >
-            <img src="./src/assets/featureImage2.svg"
+            <img src="/featureImage2.svg"
                 className="col-start-1 col-end-5 row-start-1 row-end-2
                     md:col-start-5 md:col-end-9 md:row-start-1 md:row-end-2
                     lg:col-start-6 lg:col-end-13"
@@ -77,7 +77,7 @@ const FeatureSectionThree: FC<Props> = (props) => {
             lg:grid-cols-12
             lg:px-10 lg:py-[120px]"
         >
-            <img src='./src/assets/featureImage3.svg'
+            <img src='/featureImage3.svg'
                 className="col-start-1 col-end-5
                         lg:col-end-8"
             />
@@ -119,7 +119,7 @@ const FeatureSectionFour: FC = () => {
                     drawing session with screen share.
                 </div>
             </div>
-            <img src='./src/assets/featureImage4.svg'
+            <img src='/featureImage4.svg'
                 className="col-start-1 col-end-5 row-span-1 justify-center items-stretch w-full
                     md:col-start-1 md:col-end-9
                     lg:col-start-1 lg:col-end-13
@@ -131,7 +131,12 @@ const FeatureSectionFour: FC = () => {
 
 const CTA: FC = () => {
     return (
-        <div className="flex flex-col justify-center items-center px-6 mb-20">
+        <div className="relative flex flex-col justify-center items-center px-6 mb-20">
+            <div className="absolute top-0">
+                <img src="/sparkles.svg" alt="sparkles" 
+                    className="align-top overflow-clip"
+                />
+            </div> 
             <h4 className='text-[32px] font-bold font-gg-sans'>Ready to start your journey?</h4>
             <Button className='flex text-white bg-blurpleButton rounded-full mt-10 font-medium text-center text-xl
                       items-center justify-center
@@ -145,9 +150,3 @@ const CTA: FC = () => {
         </div>
     );
 }
-
-{/*             <div className="absolute">
-                <img src="./src/assets/sparkles.svg" alt="sparkles" 
-                    className="align-top overflow-clip"
-                />
-            </div> */}
