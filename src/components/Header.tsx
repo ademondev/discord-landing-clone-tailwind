@@ -35,13 +35,13 @@ export const Header: FC<Props> = (props) => {
                 <DiscordLogo className='text-white w-32 ml-6' />
                 <ul className='hidden flex-row lg:flex'>
                     {headerLinks.map((link, index) => (
-                        <HeaderLink key={index} content={link.content} className='text-white font-bold hover:underline underline-offset-1
+                        <HeaderLink key={index} content={link.content} className='text-white font-medium hover:underline underline-offset-1
                         p-1 m-1 text-base'>
                             {link.content}
                         </HeaderLink>
                     ))}
                 </ul>
-                <Button className='rounded-full bg-white text-black cursor-pointer 
+                <Button className='rounded-full bg-white text-dark-not-black cursor-pointer 
                     hover:shadow-lg 
                     hover:text-blurple transition
                     duration-200 ease-in-out
@@ -49,6 +49,8 @@ export const Header: FC<Props> = (props) => {
                     ml-auto
                     mr-4
                     lg:ml-0 
+                    font-gg-sans
+                    font-medium
                     '
                 >
                     Login
