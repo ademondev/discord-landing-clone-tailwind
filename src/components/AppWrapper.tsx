@@ -6,8 +6,8 @@ type Props = {}
 
 export const AppWrapper: FC<Props> = (props) => {
     return (
-        <div className='bg-cover bg-center bg-no-repeat bg-background' style={{ backgroundImage: "url('./src/assets/heroBackground.svg')"}}>
-            <div className='md:container md:mx-auto'> 
+        <div className='bg-cover bg-center bg-no-repeat bg-background' style={{ backgroundImage: "url('./src/assets/hero-bg.jpg')"}}>
+            <div className='container mx-auto'> 
                     <Header />
                     <Hero />
             </div>
